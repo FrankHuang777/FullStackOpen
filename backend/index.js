@@ -4,9 +4,6 @@ const app = express()
 
 app.use(express.json())
 
-const cors = require('cors')
-app.use(cors())
-
 app.use(express.static('dist'))
 
 // 3.8: 自定义 token，把请求体序列化后加入日志
